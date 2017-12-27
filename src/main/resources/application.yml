@@ -1,0 +1,19 @@
+spring:
+logging:
+  level:
+    org.springframework.web: DEBUG
+
+server:
+  port: 8091
+
+zuul:
+  routes:
+    blogposts:
+      url: http://localhost:8097/
+
+ribbon:
+  eureka:
+    enabled: false
+
+flyway:
+  enabled: false 
